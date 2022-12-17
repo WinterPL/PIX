@@ -1,3 +1,4 @@
 C:\PL\X\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
 E:\LCV\PL-fall22\VGP240\VGP 240-AS1\X\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
 E:\LCV\PL-fall22\VGP240\VGP 240-PiX\X\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+C:\Users\LCV2132501\Documents\GitHub\PIX\VGP 240-PiX\X\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
