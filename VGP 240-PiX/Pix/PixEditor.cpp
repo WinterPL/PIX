@@ -255,8 +255,8 @@ void PixEditor::ShowScriptFileWindows()
 		auto& textWindow = (*iter);
 
 		std::string filename =
-			textWindow.filePath.has_filename()
-			? textWindow.filePath.filename().u8string()
+			(textWindow.filePath.has_filename()) 
+			? textWindow.filePath.filename().generic_string()
 			: "New " + textWindow.windowId;
 		std::string fileLabel = filename;
 		if (textWindow.needSave)
@@ -454,7 +454,7 @@ void PixEditor::Open()
 	textWindow.filePath = path;
 	textWindow.editor.SetLanguageDefinition(mLanguageDefinition);
 	textWindow.editor.SetPalette(GetPixScriptPalette());
-	textWindow.windowId = path.filename().u8string();
+	textWindow.windowId = path.filename().generic_string();
 	textWindow.editor.SetText(content);
 
 	SetNextWindowPosition();
