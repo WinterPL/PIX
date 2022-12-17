@@ -1,0 +1,34 @@
+SetResolution(10, 10, 50, true)
+
+//SetColor(62, 163, 86)
+//DrawPixel(2,2)
+
+//SetColor(163, 139, 62)
+//DrawPixel(3, 3)
+
+//SetColor(255,0, 255)
+//DrawPixel(4, 4)
+
+BeginDraw(line)
+AddVertex(1,1,0,0,0)
+AddVertex(8,6,255,255,255)
+
+AddVertex(4,5,255,255,255)
+AddVertex(1,8,0,0,0)
+
+AddVertex(9,0,255,255,255)
+AddVertex(9,8,0,0,0)
+
+AddVertex(0,9,0,0,0)
+AddVertex(8,9,255,255,255)
+EndDraw()
+
+//DrawPixel(3,3);
+
+
+
+
+
+
+
+

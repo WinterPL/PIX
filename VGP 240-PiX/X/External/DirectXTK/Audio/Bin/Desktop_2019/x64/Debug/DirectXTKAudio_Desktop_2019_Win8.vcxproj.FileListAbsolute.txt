@@ -1,0 +1,3 @@
+C:\PL\X\External\DirectXTK\Audio\Bin\Desktop_2019\x64\Debug\DirectXTKAudioWin8.lib
+E:\LCV\PL-fall22\VGP240\VGP 240-AS1\X\External\DirectXTK\Audio\Bin\Desktop_2019\x64\Debug\DirectXTKAudioWin8.lib
+E:\LCV\PL-fall22\VGP240\VGP 240-PiX\X\External\DirectXTK\Audio\Bin\Desktop_2019\x64\Debug\DirectXTKAudioWin8.lib

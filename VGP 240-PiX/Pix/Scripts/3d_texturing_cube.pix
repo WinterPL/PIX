@@ -1,0 +1,90 @@
+SetResolution(500, 500, 1)
+
+SetViewport(50, 50, 400, 400)
+SetClipping(true)
+SetCullMode(back)
+ShowViewport(true)
+EnableDepth(true)
+
+float $camX = 0, 0.01
+float $camY = 0, 0.01
+float $camZ = -3.5, 0.01
+
+float $camDirX = 0, 0.01
+float $camDirY = 0, 0.01
+float $camDirZ = 1, 0.01
+
+float $rotX = 40, 0.1
+float $rotY = 35, 0.1
+float $rotZ = 20, 0.1
+
+SetCameraPosition($camX, $camY, $camZ)
+SetCameraDirection($camDirX, $camDirY, $camDirZ)
+
+PushTranslation(0, 0, 0)
+PushRotationZ($rotZ)
+PushRotationY($rotY)
+PushRotationX($rotX)
+PushScaling(1, 1, 1)
+
+SetTexture(../Images/checker.bmp)
+//SetTexture(../Images/sponge_bob.bmp)
+//SetTexture(../Images/crate.bmp)
+
+BeginDraw(triangle, true)
+
+// Front
+AddVertex( 1, -1,  1,   0, 255, -255)
+AddVertex( 1,  1,  1,   0,   0, -255)
+AddVertex(-1,  1,  1, 255,   0, -255)
+AddVertex( 1, -1,  1,   0, 255, -255)
+AddVertex(-1,  1,  1, 255,   0, -255)
+AddVertex(-1, -1,  1, 255, 255, -255)
+
+// Back
+AddVertex(-1, -1, -1,   0, 255, -255)
+AddVertex(-1,  1, -1,   0,   0, -255)
+AddVertex( 1,  1, -1, 255,   0, -255)
+AddVertex(-1, -1, -1,   0, 255, -255)
+AddVertex( 1,  1, -1, 255,   0, -255)
+AddVertex( 1, -1, -1, 255, 255, -255)
+
+// Right
+AddVertex( 1, -1, -1,   0, 255, -255)
+AddVertex( 1,  1, -1,   0,   0, -255)
+AddVertex( 1,  1,  1, 255,   0, -255)
+AddVertex( 1, -1, -1,   0, 255, -255)
+AddVertex( 1,  1,  1, 255,   0, -255)
+AddVertex( 1, -1,  1, 255, 255, -255)
+
+// Left
+AddVertex(-1, -1,  1,   0, 255, -255)
+AddVertex(-1,  1,  1,   0,   0, -255)
+AddVertex(-1,  1, -1, 255,   0, -255)
+AddVertex(-1, -1,  1,   0, 255, -255)
+AddVertex(-1,  1, -1, 255,   0, -255)
+AddVertex(-1, -1, -1, 255, 255, -255)
+
+// Top
+AddVertex(-1, 1, -1,   0, 255, -255)
+AddVertex(-1, 1,  1,   0,   0, -255)
+AddVertex( 1, 1,  1, 255,   0, -255)
+AddVertex(-1, 1, -1,   0, 255, -255)
+AddVertex( 1, 1,  1, 255,   0, -255)
+AddVertex( 1, 1, -1, 255, 255, -255)
+
+// Bottom
+AddVertex(-1, -1,  1,   0, 255, -255)
+AddVertex(-1, -1, -1,   0,   0, -255)
+AddVertex( 1, -1, -1, 255,   0, -255)
+AddVertex(-1, -1,  1,   0, 255, -255)
+AddVertex( 1, -1, -1, 255,   0, -255)
+AddVertex( 1, -1,  1, 255, 255, -255)
+
+EndDraw()
+
+
+
+
+
+

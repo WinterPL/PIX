@@ -1,0 +1,11 @@
+﻿  AudioEngine.cpp
+  DynamicSoundEffectInstance.cpp
+  SoundCommon.cpp
+  SoundEffect.cpp
+  SoundEffectInstance.cpp
+  SoundStreamInstance.cpp
+  WAVFileReader.cpp
+  WaveBank.cpp
+  WaveBankReader.cpp
+  Generating Code...
+  DirectXTKAudio_Desktop_2019_Win8.vcxproj -> E:\LCV\PL-fall22\VGP240\VGP 240-PiX\X\External\DirectXTK\Audio\Bin\Desktop_2019\x64\Debug\DirectXTKAudioWin8.lib

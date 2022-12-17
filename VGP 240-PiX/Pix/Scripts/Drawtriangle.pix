@@ -1,0 +1,18 @@
+SetResolution(20, 20, 25, true)
+
+BeginDraw(triangle,true)
+AddVertex(2,2,255,0,255)
+AddVertex(18,16,0,225,0)
+AddVertex(20,10,255,0,0)
+EndDraw()
+
+
+
+
+
+
+
+
+
+
+

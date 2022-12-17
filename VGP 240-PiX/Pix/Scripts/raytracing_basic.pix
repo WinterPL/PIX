@@ -1,0 +1,54 @@
+SetResolution(400, 300, 1)
+
+float $camX = 0, 0.01
+float $camY = -2.5, 0.01
+float $camZ = -8, 0.01
+
+float $camDirX = 0, 0.01
+float $camDirY = 0, 0.01
+float $camDirZ = 1, 0.01
+
+float $lightPosX = 1.5, 0.01, -10, 10
+float $lightPosY = 2, 0.01, -10, 10
+float $lightPosZ = 0, 0.01, -10, 10
+
+float $lightR = 0.6, 0.001, 0, 1
+float $lightG = 0.6, 0.001, 0, 1
+float $lightB = 0.6, 0.001, 0, 1
+
+float $posAX = -3, 0.01
+float $posAY = -7, 0.01
+float $posAZ = 2.5, 0.01
+float $posBX = 4, 0.01
+float $posBY = -7, 0.01
+float $posBZ = 7, 0.01
+
+SetCameraPosition($camX, $camY, $camZ)
+SetCameraDirection($camDirX, $camDirY, $camDirZ)
+
+BeginRayTracing()
+RTLight(-5, 5, -3, 0.6, 0.6, 0.6)
+RTLight($lightPosX, $lightPosY, $lightPosZ, $lightR, $lightG, $lightB)
+
+RTSphere($posAX, $posAY, $posAZ, 3, 1, 1, 1 6)
+RTSphere($posBX, $posBY, $posBZ, 3, 1, 1, 1, 20)
+
+// Ceiling
+RTSphere(0, 1000, 0, 990, 0.4, 0.4, 0.4)
+
+// Floor
+RTSphere(0, -1000, 0, 990, 0.5, 0.5, 0.5)
+
+// Left Wall
+RTSphere(-1000, 0, 0, 990, 0.8, 0.35, 0.5)
+
+// Rigth Wall
+RTSphere(1000, 0, 0, 990, 0.35, 0.35, 0.8)
+
+// Back Wall
+RTSphere(0, 0, -1000, 990, 0.9, 0.9, 0.9)
+
+// Back Wall
+RTSphere(0, 0, 1000, 990, 0.9, 0.9, 0.9)
+
+EndRayTracing()

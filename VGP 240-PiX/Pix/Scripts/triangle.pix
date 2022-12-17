@@ -1,0 +1,38 @@
+SetResolution(11, 10, 25 true)
+
+//SetColor(255, 255, 255)
+//1 1
+DrawPixel(1,5)
+//2 1
+DrawPixel(2,5)
+DrawPixel(2,4)
+//3 1
+DrawPixel(3,5)
+DrawPixel(3,4)
+DrawPixel(3,3)
+//4 1
+DrawPixel(4,5)
+DrawPixel(4,4)
+DrawPixel(4,3)
+DrawPixel(4,2)
+//5
+DrawPixel(5,5)
+DrawPixel(5,4)
+DrawPixel(5,3)
+DrawPixel(5,2)
+DrawPixel(5,1)
+//4 2
+DrawPixel(6,5)
+DrawPixel(6,4)
+DrawPixel(6,3)
+DrawPixel(6,2)
+//3 2
+DrawPixel(7,5)
+DrawPixel(7,4)
+DrawPixel(7,3)
+//2 2
+DrawPixel(8,5)
+DrawPixel(8,4)
+//1 2
+DrawPixel(9,5)
+

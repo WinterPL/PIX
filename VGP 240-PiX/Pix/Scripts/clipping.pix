@@ -1,0 +1,46 @@
+SetResolution(50, 50, 10,true)
+
+SetViewport(10, 10, 30, 30)
+SetClipping(false)
+ShowViewport(true)
+SetFillMode(solid)
+
+
+BeginDraw(point)
+AddVertex(10, 10, 0, 0,0)
+AddVertex(40, 40, 255, 0, 0)
+
+AddVertex(8, 17, 0, 255, 0)
+AddVertex(9, 16, 0, 255, 0)
+AddVertex(10, 15, 0, 255, 0)
+AddVertex(11, 14, 0, 255, 0)
+AddVertex(12, 13, 0, 255, 0)
+AddVertex(13, 12, 0, 255, 0)
+AddVertex(14, 11, 0, 255, 0)
+AddVertex(15, 10, 0, 255, 0)
+AddVertex(16, 9, 0, 255, 0)
+AddVertex(17, 8, 0, 255, 0)
+EndDraw()
+
+BeginDraw(line)
+AddVertex(5, 20, 255, 0, 0)
+AddVertex(23, 25, 0, 255, 1)
+
+AddVertex(15, 5, 255, 255, 0)
+AddVertex(45, 20, 255, 0, 255)
+
+AddVertex(45, 27, 0, 255, 255)
+AddVertex(32, 45, 255, 255, 0)
+EndDraw()
+
+BeginDraw(triangle)
+AddVertex(15, 25, 255, 255, 0)
+AddVertex(25, 43, 0, 255, 255)
+AddVertex(5, 43, 255, 0, 255)
+
+AddVertex(30, 20, 255, 0, 0)
+AddVertex(48, 25, 0, 255, 0)
+AddVertex(35, 33, 0, 0, 255)
+EndDraw()
+
+
